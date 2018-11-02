@@ -7,8 +7,11 @@
 //
 
 #import "ViewController.h"
+#import "Flurry.h"
 
-@interface ViewController ()
+@interface ViewController () {
+    WCSession *session;
+}
 
 @end
 
@@ -16,7 +19,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    if ([WCSession isSupported]) {
+        session = [WCSession defaultSession];
+        session.delegate = self;
+        [session activateSession];
+        NSLog(@"WCSession is supported");
+    }
 }
 
 
@@ -27,5 +35,16 @@
 
 
 - (IBAction)start:(UIButton *)sender {
+    NSLog(@"something");
+    [session sendMessage:@{@"start_button_pressed" : @"yes"} replyHandler:nil errorHandler:nil];
+    [Flurry logEvent:@"Time_Reset_Pressed"];
 }
+- (void)session:(nonnull WCSession *)session activationDidCompleteWithState:(WCSessionActivationState)activationState error:(nullable NSError *)error {
+}
+
+- (void)sessionDidDeactivate:(WCSession *)session {}
+
+- (void)sessionDidBecomeInactive:(WCSession *)session{}
+
+
 @end

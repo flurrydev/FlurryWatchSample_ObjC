@@ -8,8 +8,9 @@
 
 #import <WatchKit/WatchKit.h>
 #import <Foundation/Foundation.h>
+#import <WatchConnectivity/WatchConnectivity.h>
 
-@interface InterfaceController : WKInterfaceController
+@interface InterfaceController : WKInterfaceController <WCSessionDelegate>
 @property (unsafe_unretained, nonatomic) IBOutlet WKInterfaceTimer *timer;
 
 @end

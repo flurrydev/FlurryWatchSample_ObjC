@@ -16,13 +16,27 @@
 @end
 
 
-@implementation InterfaceController
+@implementation InterfaceController 
 @synthesize timer;
 
 - (void)awakeWithContext:(id)context {
     [super awakeWithContext:context];
+    if ([WCSession isSupported]) {
+        WCSession *session = [WCSession defaultSession];
+        session.delegate = self;
+        [session activateSession];
+    }
 
     // Configure interface objects here.
+}
+
+- (void)session:(WCSession *)session didReceiveMessage:(NSDictionary<NSString *,id> *)message {
+    for(NSString *key in [message allKeys]) {
+        NSLog(@"%@",[message objectForKey:key]);
+    }
+    [timer setDate:[NSDate dateWithTimeIntervalSinceNow:0]];
+    [timer start];
+    [FlurryWatch logWatchEvent:@"Started_Timer_Watch"];
 }
 
 - (void)willActivate {
@@ -33,6 +47,10 @@
 - (void)didDeactivate {
     // This method is called when watch view controller is no longer visible
     [super didDeactivate];
+}
+
+- (void)session:(nonnull WCSession *)session activationDidCompleteWithState:(WCSessionActivationState)activationState error:(nullable NSError *)error {
+    
 }
 
 @end
