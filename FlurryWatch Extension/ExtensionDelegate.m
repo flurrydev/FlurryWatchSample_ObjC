@@ -13,7 +13,7 @@
 @implementation ExtensionDelegate
 
 - (void)applicationDidFinishLaunching {
-    [FlurryWatch logWatchEvent:@"WatchFinishedLaunchingTestEvent"];
+
 }
 
 - (void)applicationDidBecomeActive {
