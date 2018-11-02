@@ -13,9 +13,66 @@
 		76D335F32177A2DC0085DB7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76D335F22177A2DC0085DB7D /* Assets.xcassets */; };
 		76D335F62177A2DC0085DB7D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76D335F42177A2DC0085DB7D /* LaunchScreen.storyboard */; };
 		76D335F92177A2DC0085DB7D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 76D335F82177A2DC0085DB7D /* main.m */; };
+		76D336052177A7480085DB7D /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76D336032177A7480085DB7D /* Interface.storyboard */; };
+		76D336072177A7480085DB7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76D336062177A7480085DB7D /* Assets.xcassets */; };
+		76D3360E2177A7480085DB7D /* FlurryWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 76D3360D2177A7480085DB7D /* FlurryWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		76D336142177A7480085DB7D /* InterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76D336132177A7480085DB7D /* InterfaceController.m */; };
+		76D336172177A7490085DB7D /* ExtensionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 76D336162177A7490085DB7D /* ExtensionDelegate.m */; };
+		76D3361C2177A7490085DB7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76D3361B2177A7490085DB7D /* Assets.xcassets */; };
+		76D336212177A7490085DB7D /* FlurryWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 76D336012177A7480085DB7D /* FlurryWatch.app */; };
+		76D3362B2177ABE60085DB7D /* WatchConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76D3362A2177ABE60085DB7D /* WatchConnectivity.framework */; };
+		8828FCA2E5CF5E6350BAB610 /* libPods-FlurryWatchSample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5799A7348236AA51622E6D1E /* libPods-FlurryWatchSample.a */; };
+		9E5DDC2D5F063AC19ADD0864 /* libPods-FlurryWatch Extension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 693E9E80C8756AFC75A43FC2 /* libPods-FlurryWatch Extension.a */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		76D3360F2177A7480085DB7D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 76D335DE2177A2D80085DB7D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 76D3360C2177A7480085DB7D;
+			remoteInfo = "FlurryWatch Extension";
+		};
+		76D3361F2177A7490085DB7D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 76D335DE2177A2D80085DB7D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 76D336002177A7480085DB7D;
+			remoteInfo = FlurryWatch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		76D336272177A7490085DB7D /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				76D3360E2177A7480085DB7D /* FlurryWatch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76D336292177A7490085DB7D /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				76D336212177A7490085DB7D /* FlurryWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		5799A7348236AA51622E6D1E /* libPods-FlurryWatchSample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FlurryWatchSample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		67A42662FC01C191C858C676 /* Pods-FlurryWatchSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlurryWatchSample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FlurryWatchSample/Pods-FlurryWatchSample.debug.xcconfig"; sourceTree = "<group>"; };
+		693E9E80C8756AFC75A43FC2 /* libPods-FlurryWatch Extension.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FlurryWatch Extension.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B3A3A1878BF00E756084275 /* Pods-FlurryWatch Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlurryWatch Extension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FlurryWatch Extension/Pods-FlurryWatch Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		6CD621042A8E453F04D76ED1 /* Pods-FlurryWatchSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlurryWatchSample.release.xcconfig"; path = "Pods/Target Support Files/Pods-FlurryWatchSample/Pods-FlurryWatchSample.release.xcconfig"; sourceTree = "<group>"; };
 		76D335E62177A2D80085DB7D /* FlurryWatchSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlurryWatchSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76D335E92177A2D80085DB7D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		76D335EA2177A2D80085DB7D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -26,24 +83,80 @@
 		76D335F52177A2DC0085DB7D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		76D335F72177A2DC0085DB7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		76D335F82177A2DC0085DB7D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		76D336012177A7480085DB7D /* FlurryWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlurryWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		76D336042177A7480085DB7D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		76D336062177A7480085DB7D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		76D336082177A7480085DB7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		76D3360D2177A7480085DB7D /* FlurryWatch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "FlurryWatch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		76D336122177A7480085DB7D /* InterfaceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterfaceController.h; sourceTree = "<group>"; };
+		76D336132177A7480085DB7D /* InterfaceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterfaceController.m; sourceTree = "<group>"; };
+		76D336152177A7490085DB7D /* ExtensionDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExtensionDelegate.h; sourceTree = "<group>"; };
+		76D336162177A7490085DB7D /* ExtensionDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExtensionDelegate.m; sourceTree = "<group>"; };
+		76D3361B2177A7490085DB7D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		76D3361D2177A7490085DB7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		76D3361E2177A7490085DB7D /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		76D3362A2177ABE60085DB7D /* WatchConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatchConnectivity.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS4.3.sdk/System/Library/Frameworks/WatchConnectivity.framework; sourceTree = DEVELOPER_DIR; };
+		9561DA2FA44B7AEFE8C4523C /* Pods-FlurryWatch Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlurryWatch Extension.release.xcconfig"; path = "Pods/Target Support Files/Pods-FlurryWatch Extension/Pods-FlurryWatch Extension.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		76D335E32177A2D80085DB7D /* Frameworks */ = {
+		014FF008F6E9F2CC165B3CE5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		76D335E32177A2D80085DB7D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8828FCA2E5CF5E6350BAB610 /* libPods-FlurryWatchSample.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76D3360A2177A7480085DB7D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76D3362B2177ABE60085DB7D /* WatchConnectivity.framework in Frameworks */,
+				9E5DDC2D5F063AC19ADD0864 /* libPods-FlurryWatch Extension.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6B818BDB94638934F26BD6EF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				76D3362A2177ABE60085DB7D /* WatchConnectivity.framework */,
+				5799A7348236AA51622E6D1E /* libPods-FlurryWatchSample.a */,
+				693E9E80C8756AFC75A43FC2 /* libPods-FlurryWatch Extension.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		74737A4B1B48D01B6B104E85 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				67A42662FC01C191C858C676 /* Pods-FlurryWatchSample.debug.xcconfig */,
+				6CD621042A8E453F04D76ED1 /* Pods-FlurryWatchSample.release.xcconfig */,
+				6B3A3A1878BF00E756084275 /* Pods-FlurryWatch Extension.debug.xcconfig */,
+				9561DA2FA44B7AEFE8C4523C /* Pods-FlurryWatch Extension.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		76D335DD2177A2D80085DB7D = {
 			isa = PBXGroup;
 			children = (
 				76D335E82177A2D80085DB7D /* FlurryWatchSample */,
+				76D336022177A7480085DB7D /* FlurryWatch */,
+				76D336112177A7480085DB7D /* FlurryWatch Extension */,
 				76D335E72177A2D80085DB7D /* Products */,
+				74737A4B1B48D01B6B104E85 /* Pods */,
+				6B818BDB94638934F26BD6EF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,6 +164,8 @@
 			isa = PBXGroup;
 			children = (
 				76D335E62177A2D80085DB7D /* FlurryWatchSample.app */,
+				76D336012177A7480085DB7D /* FlurryWatch.app */,
+				76D3360D2177A7480085DB7D /* FlurryWatch Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -71,6 +186,30 @@
 			path = FlurryWatchSample;
 			sourceTree = "<group>";
 		};
+		76D336022177A7480085DB7D /* FlurryWatch */ = {
+			isa = PBXGroup;
+			children = (
+				76D336032177A7480085DB7D /* Interface.storyboard */,
+				76D336062177A7480085DB7D /* Assets.xcassets */,
+				76D336082177A7480085DB7D /* Info.plist */,
+			);
+			path = FlurryWatch;
+			sourceTree = "<group>";
+		};
+		76D336112177A7480085DB7D /* FlurryWatch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				76D336122177A7480085DB7D /* InterfaceController.h */,
+				76D336132177A7480085DB7D /* InterfaceController.m */,
+				76D336152177A7490085DB7D /* ExtensionDelegate.h */,
+				76D336162177A7490085DB7D /* ExtensionDelegate.m */,
+				76D3361B2177A7490085DB7D /* Assets.xcassets */,
+				76D3361D2177A7490085DB7D /* Info.plist */,
+				76D3361E2177A7490085DB7D /* PushNotificationPayload.apns */,
+			);
+			path = "FlurryWatch Extension";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -78,18 +217,57 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 76D335FC2177A2DC0085DB7D /* Build configuration list for PBXNativeTarget "FlurryWatchSample" */;
 			buildPhases = (
+				B3FD296EB33AFB2AF31DB42A /* [CP] Check Pods Manifest.lock */,
 				76D335E22177A2D80085DB7D /* Sources */,
 				76D335E32177A2D80085DB7D /* Frameworks */,
 				76D335E42177A2D80085DB7D /* Resources */,
+				76D336292177A7490085DB7D /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				76D336202177A7490085DB7D /* PBXTargetDependency */,
 			);
 			name = FlurryWatchSample;
 			productName = FlurryWatchSample;
 			productReference = 76D335E62177A2D80085DB7D /* FlurryWatchSample.app */;
 			productType = "com.apple.product-type.application";
+		};
+		76D336002177A7480085DB7D /* FlurryWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 76D336282177A7490085DB7D /* Build configuration list for PBXNativeTarget "FlurryWatch" */;
+			buildPhases = (
+				76D335FF2177A7480085DB7D /* Resources */,
+				76D336272177A7490085DB7D /* Embed App Extensions */,
+				014FF008F6E9F2CC165B3CE5 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				76D336102177A7480085DB7D /* PBXTargetDependency */,
+			);
+			name = FlurryWatch;
+			productName = FlurryWatch;
+			productReference = 76D336012177A7480085DB7D /* FlurryWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		76D3360C2177A7480085DB7D /* FlurryWatch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 76D336262177A7490085DB7D /* Build configuration list for PBXNativeTarget "FlurryWatch Extension" */;
+			buildPhases = (
+				5316DA4C05CF697CE638740C /* [CP] Check Pods Manifest.lock */,
+				76D336092177A7480085DB7D /* Sources */,
+				76D3360A2177A7480085DB7D /* Frameworks */,
+				76D3360B2177A7480085DB7D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "FlurryWatch Extension";
+			productName = "FlurryWatch Extension";
+			productReference = 76D3360D2177A7480085DB7D /* FlurryWatch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -101,6 +279,12 @@
 				ORGANIZATIONNAME = Flurry;
 				TargetAttributes = {
 					76D335E52177A2D80085DB7D = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					76D336002177A7480085DB7D = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					76D3360C2177A7480085DB7D = {
 						CreatedOnToolsVersion = 9.4.1;
 					};
 				};
@@ -119,6 +303,8 @@
 			projectRoot = "";
 			targets = (
 				76D335E52177A2D80085DB7D /* FlurryWatchSample */,
+				76D336002177A7480085DB7D /* FlurryWatch */,
+				76D3360C2177A7480085DB7D /* FlurryWatch Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -134,7 +320,63 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		76D335FF2177A7480085DB7D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76D336072177A7480085DB7D /* Assets.xcassets in Resources */,
+				76D336052177A7480085DB7D /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76D3360B2177A7480085DB7D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76D3361C2177A7490085DB7D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5316DA4C05CF697CE638740C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FlurryWatch Extension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B3FD296EB33AFB2AF31DB42A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FlurryWatchSample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		76D335E22177A2D80085DB7D /* Sources */ = {
@@ -147,7 +389,29 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		76D336092177A7480085DB7D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76D336172177A7490085DB7D /* ExtensionDelegate.m in Sources */,
+				76D336142177A7480085DB7D /* InterfaceController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		76D336102177A7480085DB7D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 76D3360C2177A7480085DB7D /* FlurryWatch Extension */;
+			targetProxy = 76D3360F2177A7480085DB7D /* PBXContainerItemProxy */;
+		};
+		76D336202177A7490085DB7D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 76D336002177A7480085DB7D /* FlurryWatch */;
+			targetProxy = 76D3361F2177A7490085DB7D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		76D335EF2177A2D80085DB7D /* Main.storyboard */ = {
@@ -164,6 +428,14 @@
 				76D335F52177A2DC0085DB7D /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		76D336032177A7480085DB7D /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				76D336042177A7480085DB7D /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -281,6 +553,7 @@
 		};
 		76D335FD2177A2DC0085DB7D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67A42662FC01C191C858C676 /* Pods-FlurryWatchSample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +571,7 @@
 		};
 		76D335FE2177A2DC0085DB7D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6CD621042A8E453F04D76ED1 /* Pods-FlurryWatchSample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -310,6 +584,84 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.flurry.FlurryWatchSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		76D336222177A7490085DB7D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S6JSG6FHB3;
+				IBSC_MODULE = FlurryWatch_Extension;
+				INFOPLIST_FILE = FlurryWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.flurry.FlurryWatchSample.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Debug;
+		};
+		76D336232177A7490085DB7D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S6JSG6FHB3;
+				IBSC_MODULE = FlurryWatch_Extension;
+				INFOPLIST_FILE = FlurryWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.flurry.FlurryWatchSample.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Release;
+		};
+		76D336242177A7490085DB7D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B3A3A1878BF00E756084275 /* Pods-FlurryWatch Extension.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S6JSG6FHB3;
+				INFOPLIST_FILE = "FlurryWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.flurry.FlurryWatchSample.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Debug;
+		};
+		76D336252177A7490085DB7D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9561DA2FA44B7AEFE8C4523C /* Pods-FlurryWatch Extension.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S6JSG6FHB3;
+				INFOPLIST_FILE = "FlurryWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.flurry.FlurryWatchSample.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
 			};
 			name = Release;
 		};
@@ -330,6 +682,24 @@
 			buildConfigurations = (
 				76D335FD2177A2DC0085DB7D /* Debug */,
 				76D335FE2177A2DC0085DB7D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		76D336262177A7490085DB7D /* Build configuration list for PBXNativeTarget "FlurryWatch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76D336242177A7490085DB7D /* Debug */,
+				76D336252177A7490085DB7D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		76D336282177A7490085DB7D /* Build configuration list for PBXNativeTarget "FlurryWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76D336222177A7490085DB7D /* Debug */,
+				76D336232177A7490085DB7D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
