@@ -36,7 +36,8 @@
     }
     [timer setDate:[NSDate dateWithTimeIntervalSinceNow:0]];
     [timer start];
-    [FlurryWatch logWatchEvent:@"Started_Timer_Watch"];
+    FlurryEventRecordStatus status = [FlurryWatch logWatchEvent:@"Started_Timer_Watch"];
+    NSLog(@"%@", [self stringForEventRercordStatus:status]);
 }
 
 - (void)willActivate {
@@ -51,6 +52,24 @@
 
 - (void)session:(nonnull WCSession *)session activationDidCompleteWithState:(WCSessionActivationState)activationState error:(nullable NSError *)error {
     
+}
+-(NSString *)stringForEventRercordStatus:(FlurryEventRecordStatus)status {
+    switch(status) {
+        case FlurryEventFailed:
+            return @"Log Event Failed";
+        case FlurryEventRecorded:
+            return @"Log Event Recorded";
+        case FlurryEventUniqueCountExceeded:
+            return @"Log Event Unique Count Exceeded";
+        case FlurryEventParamsCountExceeded:
+            return @"Log Event Params Count Exceeded";
+        case FlurryEventLogCountExceeded:
+            return @"Log Event Count Exceeded";
+        case FlurryEventLoggingDelayed:
+            return @"Log Event Delayed";
+        case FlurryEventAnalyticsDisabled:
+            return @"Log Event Analytics Disabled";
+    }
 }
 
 @end
