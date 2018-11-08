@@ -27,7 +27,6 @@
         [session activateSession];
     }
 
-    // Configure interface objects here.
 }
 
 - (void)session:(WCSession *)session didReceiveMessage:(NSDictionary<NSString *,id> *)message {

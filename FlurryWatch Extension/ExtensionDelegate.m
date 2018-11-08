@@ -7,8 +7,6 @@
 //
 
 #import "ExtensionDelegate.h"
-#import "Flurry.h"
-#import "FlurryWatch.h"
 
 @implementation ExtensionDelegate
 

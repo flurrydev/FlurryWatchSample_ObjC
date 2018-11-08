@@ -34,7 +34,6 @@
 
 
 - (IBAction)start:(UIButton *)sender {
-    NSLog(@"something");
     [session sendMessage:@{@"start_button_pressed" : @"yes"} replyHandler:nil errorHandler:nil];
     FlurryEventRecordStatus status = [Flurry logEvent:@"Time_Reset_Pressed"];
     NSLog(@"%@", [self stringForEventRercordStatus:status]);
