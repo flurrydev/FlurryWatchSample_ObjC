@@ -1,6 +1,6 @@
 # Flurry Watch Sample App (Obj C Version)
 
-The Flurry Watch SDK requires a paired iPhone at this time.
+The Flurry Watch SDK requires a paired iPhone at this time. For the Swift 5 version refer [here](https://github.com/flurrydev/FlurryWatchSample_Swift)
 
 For detailed integration instructions refer to [Flurry documentation](https://developer.yahoo.com/flurry/docs/integrateflurry/watchos/)
 
