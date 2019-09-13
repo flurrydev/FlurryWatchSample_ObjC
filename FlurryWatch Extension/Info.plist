@@ -4,7 +4,7 @@
 <dict>
 	<key>Flurry Watch API Key</key>
 	<string>2YKCV3RJ73T6DCKF9DBX</string>
-	<key>Flurry Watvch Debug</key>
+	<key>Flurry Watch Debug</key>
 	<true/>
 	<key>Flurry Watch App Version</key>
 	<string>1.0.0</string>
