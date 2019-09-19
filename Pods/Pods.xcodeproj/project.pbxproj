@@ -44,11 +44,10 @@
 		2ED20FC07EEAD2F209D515A3D7941C16 /* Pods-FlurryWatchSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FlurryWatchSample.debug.xcconfig"; sourceTree = "<group>"; };
 		3E59A34B6891DC22751D5A5E4E16AB32 /* libPods-FlurryWatchSample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-FlurryWatchSample.a"; path = "libPods-FlurryWatchSample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		472EAD3D36CF02D7D3C36FB3BA4328FC /* FlurrySessionBuilder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FlurrySessionBuilder.h; path = Flurry/FlurrySessionBuilder.h; sourceTree = "<group>"; };
-		48E22ED2A86621C295875D4B956211CF /* libFlurryWatch_9.3.1.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libFlurryWatch_9.3.1.a; path = Flurry/libFlurryWatch_9.3.1.a; sourceTree = "<group>"; };
 		4A37F4B7C82DC23D08667378039F95FB /* Pods-FlurryWatch Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FlurryWatch Extension.debug.xcconfig"; sourceTree = "<group>"; };
 		4CB0D9B8F1D7624A56B6F975691D4998 /* Flurry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Flurry.h; path = Flurry/Flurry.h; sourceTree = "<group>"; };
+		5BA84C4263A44FD7D502F1268A24BDDA /* libFlurryWatch_10.0.0.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libFlurryWatch_10.0.0.a; path = Flurry/libFlurryWatch_10.0.0.a; sourceTree = "<group>"; };
 		61024376FAFA0B80C0A61D601D2C0860 /* FlurryWatch.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FlurryWatch.h; path = Flurry/FlurryWatch.h; sourceTree = "<group>"; };
-		62AAB5B3791E8914BDAF3B77D1356064 /* libFlurry_9.3.1.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libFlurry_9.3.1.a; path = Flurry/libFlurry_9.3.1.a; sourceTree = "<group>"; };
 		63629858755691B9B827581FDD096CE9 /* libFlurry-iOS-SDK-FlurrySDK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libFlurry-iOS-SDK-FlurrySDK.a"; path = "libFlurry-iOS-SDK-FlurrySDK.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CDAED4D5ABD14873CF29A2B22F88FAE /* Pods-FlurryWatchSample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FlurryWatchSample-acknowledgements.markdown"; sourceTree = "<group>"; };
 		8024C47BA5148CFFE094760648211866 /* Pods-FlurryWatch Extension-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FlurryWatch Extension-acknowledgements.plist"; sourceTree = "<group>"; };
@@ -68,6 +67,7 @@
 		DA08B40CEF47C3DA309D8172F5D9D96D /* Pods-FlurryWatchSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FlurryWatchSample.release.xcconfig"; sourceTree = "<group>"; };
 		E03F571680BA1AB9C5285EA850AB7EF8 /* Flurry-iOS-SDK-FlurrySDK.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Flurry-iOS-SDK-FlurrySDK.xcconfig"; sourceTree = "<group>"; };
 		E563A9A5A640488751E0C2026779BA7B /* Pods-FlurryWatchSample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FlurryWatchSample-dummy.m"; sourceTree = "<group>"; };
+		ED954F11D343E951261B242B8C891BAF /* libFlurry_10.0.0.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libFlurry_10.0.0.a; path = Flurry/libFlurry_10.0.0.a; sourceTree = "<group>"; };
 		FCA4F1CB3E7B02521D81725E5A210FA8 /* Pods-FlurryWatch Extension-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FlurryWatch Extension-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -110,7 +110,7 @@
 				21D9CC4D3B85A9066BA451C7607D1271 /* FlurryConsent.h */,
 				846BC80B39B15AD64B9420727A5356A8 /* FlurryEmpty.m */,
 				472EAD3D36CF02D7D3C36FB3BA4328FC /* FlurrySessionBuilder.h */,
-				6C84E7A6CC4CA37F64B39580D2834363 /* Frameworks */,
+				BCA39F8BF3EAB8E073E215528E764844 /* Frameworks */,
 			);
 			name = FlurrySDK;
 			sourceTree = "<group>";
@@ -120,7 +120,7 @@
 			children = (
 				61024376FAFA0B80C0A61D601D2C0860 /* FlurryWatch.h */,
 				B6C7A7F0804AE736A1D6660859C10CEC /* FlurryWatchEmpty.m */,
-				742148286CF0AB19973BE43A749C6BD3 /* Frameworks */,
+				808856E4B3DDCE13488D52083411AF97 /* Frameworks */,
 			);
 			name = FlurryWatchOSSDK;
 			sourceTree = "<group>";
@@ -131,22 +131,6 @@
 				F1782C7125BD542CAE49D729EC918602 /* Flurry-iOS-SDK */,
 			);
 			name = Pods;
-			sourceTree = "<group>";
-		};
-		6C84E7A6CC4CA37F64B39580D2834363 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				62AAB5B3791E8914BDAF3B77D1356064 /* libFlurry_9.3.1.a */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		742148286CF0AB19973BE43A749C6BD3 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				48E22ED2A86621C295875D4B956211CF /* libFlurryWatch_9.3.1.a */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		7C77FB5458C6463F465A57BA0EC28435 /* Products */ = {
@@ -160,6 +144,14 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		808856E4B3DDCE13488D52083411AF97 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5BA84C4263A44FD7D502F1268A24BDDA /* libFlurryWatch_10.0.0.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B90ECDB2834D6647F0D47377C723F7A4 /* Pods-FlurryWatchSample */ = {
 			isa = PBXGroup;
 			children = (
@@ -171,6 +163,14 @@
 			);
 			name = "Pods-FlurryWatchSample";
 			path = "Target Support Files/Pods-FlurryWatchSample";
+			sourceTree = "<group>";
+		};
+		BCA39F8BF3EAB8E073E215528E764844 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ED954F11D343E951261B242B8C891BAF /* libFlurry_10.0.0.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
